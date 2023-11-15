@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>meu app</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <h1>bora lá</h1>
+    <button onclick="add()"> add + 1 </button>
+    <div id="dp" style="font-size: 18px; font-weight: 900;">
+      
+    </div>
+    <script>
+    const content = document.getElementById('dp')
+    let acc = 0
+
+    function add() {
+      acc = acc + 1
+      console.log(`acc is ${acc}`)
+      content.innerText = '\n' + acc;
+      if (acc == 10) {
+        content.innerText = '\n showwww';
+        acc = 0;
+      }
+    }
+    </script>
+  </body>
+</html>
